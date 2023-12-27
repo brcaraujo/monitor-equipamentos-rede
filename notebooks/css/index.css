@@ -1,0 +1,115 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+/* font-family: 'Roboto', sans-serif; */
+
+:root{
+    --color01: #1C1C1C;
+    --color02: #282828;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: var(--color01);
+    /* background-color: red; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+.app{
+    background-color: var(--color01);
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    align-items: center;
+}
+
+.boxSivs{
+    background-color: var(--color02);
+    width: 80vw;
+    border-radius: 15px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.boxSivs .boxTitle{
+    /* background-color: red; */
+    padding: 10px;
+    color: rgb(172, 169, 169);
+    width: 90%;
+    margin-top: 10px;
+}
+
+.boxSivs .renderSiv{
+    /* background-color: #02fba8; */
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.SIV{
+    background-color: var(--color01);
+    width: 110px;
+    height: 110px;
+    font-size: 13px;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+.SIV .btnStatus{
+    /* background-color: rgb(172, 169, 169); */
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+    border: 3px solid var(--color01);
+}
+    .up{
+        background-color: rgb(4, 249, 135);
+        animation: status 1s infinite;
+    }
+    .down{
+        background-color: rgb(249, 4, 24);
+        animation: status 0.1s infinite;
+    }
+@keyframes status {
+    0%{
+        transform: scale(1.4);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.4);
+    }
+}
+.SIV img{
+    height: 35px;
+    filter: grayscale(1);
+}
+.SIV span{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(172, 169, 169);
+}
